@@ -1,0 +1,548 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter",sans-serif;
+}
+:root{
+    --bgColor:black;
+    --mainColor:rgb(255,111,0);
+    --secondColr:white;
+}
+nav{
+    background-color: var(--bgColor);
+}
+nav ul{
+    margin-right: 7%;
+}
+nav ul li a{
+    color: var(--secondColr) !important;
+    font-size: 1.5em;
+    transition: all 1s;
+}
+nav ul li a:hover{
+    color: var(--mainColor) !important;
+    scale: 1.1;
+}
+#logo:hover{
+    scale: 1.1;
+}
+#logo{
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 7%;
+    transition: all 1s;
+    cursor: pointer;
+
+    background-image: url(American-Wisteria.jpg);
+    background-clip: text;
+    color: transparent;
+    animation: img 20s infinite;
+}
+@keyframes img{
+    to{
+        background-position-x:-500px ;
+    }
+}
+nav button{
+    margin-right: 7%;
+}
+@media screen and (max-width:991px){
+    nav ul li a{
+        margin-left: 7%;
+    }
+}
+
+body{
+    background-color: var(--bgColor) !important;
+    padding: 10% 7% 0 7%;
+}
+/* header */
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10%;
+}
+.header .text{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.header .text .text1{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(133, 131, 130);
+}
+.header .text .text2{
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--mainColor);
+}
+.header .text .text3{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--secondColr);
+}
+.header .text .text3::after{
+    content: "Frontend Developer";
+    background-image: url(download.jfif);
+    background-clip: text;
+    color: transparent;
+    animation: img 20s infinite, words 2s infinite;
+}
+@keyframes words{
+    0%,33%{
+        content: "Frontend Developer";
+    }
+    34%,66%{
+        content: "Backend Developer";
+    }
+    67%,100%{
+        content: "Fullstack Developer";
+    }
+}
+.header .text .text4{
+    font-size: 20px;
+    color: rgb(133, 131, 130);
+}
+.header .text a i{
+    color: var(--mainColor);
+    font-size: 50px;
+    transition: all 1s;
+
+}
+.header .text a i:hover{
+    color: var(--secondColr);
+    scale: 1.2;
+}
+.header .img {
+    background-color: var(--mainColor);
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+    transition: all 1s;
+}
+.header .img:hover{
+    scale: 1.1;
+}
+.header .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+@media screen and (max-width:1046px) {
+    .header .text{
+        width: 400px;
+    }
+    .header .text .text1{
+        font-size: 25px;
+    }
+    .header .text .text2{
+        font-size: 50px;
+    }
+    .header .text .text3{
+        font-size: 30px;
+    }
+    .header .text a i{
+        font-size: 40px;
+    }
+    .header .img{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media screen and (max-width:991px) {
+    .header .text{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .header .text .text1{
+        font-size: 30px;
+    }
+    .header .text .text2{
+        font-size: 60px;
+    }
+    .header .text .text3{
+        font-size: 40px;
+    }
+    .header .text a i{
+        font-size: 50px;
+    }
+    .header .img{
+        margin: 10% auto;
+    }
+}
+@media screen and (max-width:549px) {
+    .header{
+        margin-top: 40px;
+    }
+    .header .text .text1{
+        font-size: 25px;
+    }
+    .header .text .text2{
+        font-size: 40px;
+    }
+    .header .text .text3{
+        font-size: 30px;
+    }
+    .header .text a i{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:400px) {
+    .header .text .text1{
+        font-size: 20px;
+    }
+    .header .text .text2{
+        font-size: 35px;
+    }
+    .header .text .text3{
+        font-size: 25px;
+    }
+    .header .text a i{
+        font-size: 35px;
+    }
+    .header .img{
+        width: 250px;
+        height: 250px;
+    }
+}
+/* about-me */
+.about{
+    margin: 10% 0;
+    background-color: var(--bgColor);
+    box-shadow: rgba(117, 116, 116, 0.35) 0px 5px 15px;
+    padding: 40px;
+}
+.about .text1{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(133, 131, 130);
+}
+.about .text2{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--mainColor);
+}
+.about .text3{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--secondColr);
+}
+.about .text4{
+    font-size: 20px;
+    color: rgb(133, 131, 130);
+}
+.about .jobs{
+    width: 60%;
+    color: var(--secondColr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.about .jobs i{
+    font-size: 30px;
+    color: var(--mainColor);
+}
+.about a{
+    text-decoration: none;
+    color: var(--secondColr);
+    background-color: var(--mainColor);
+    padding: 20px 40px;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all 1s;
+}
+.about a:hover{
+    color: var(--mainColor);
+    background-color: var(--secondColr);
+    text-decoration: none;
+}
+@media screen and (max-width:700px){
+    .about .text1{
+        font-size: 20px;
+    }
+    .about .text2{
+        font-size: 30px;
+    }
+    .about .text3{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:500px) {
+    .about{
+        text-align: center;
+    }
+    .about .text1{
+        font-size: 20px;
+    }
+    .about .text2{
+        font-size: 25px;
+    }
+    .about .text3{
+        font-size: 20px;
+    }
+    .about .text4{
+        font-size: 18px;
+    }
+    .about .jobs{
+        width: 100%;
+        justify-content: center;
+    }
+    .about a{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+}
+
+
+/* services */
+.services-parent{
+    width: 100%;
+    margin: 5% 0;
+}
+.services-parent h1{
+    text-align: center;
+    font-size: 50px;
+    color: var(--mainColor);
+}
+.services-parent h1 span{
+    color: var(--secondColr);
+}
+.services-parent .services{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services-parent .services div{
+    width: 30%;
+    text-align: center;
+    margin: 5% 0;
+    box-shadow: rgba(117, 116, 116, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+.services-parent .services div i{
+    font-size: 60px;
+    color: var(--mainColor);
+    margin-bottom: 30px;
+    transition: all 1s;
+}
+.services-parent .services div i:hover{
+    color: var(--secondColr);
+    rotate: 20deg;
+}
+.services-parent .services div h2{
+    color: var(--secondColr);
+}
+.services-parent .services div p{
+    color: rgb(133, 131, 130);
+    margin: 20px 0;
+}
+.services-parent .services div a{
+    text-decoration: none;
+    color:var(--bgColor);
+    background-color: var(--mainColor);
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 0 20px;
+    transition: all 1s;
+}
+.services-parent .services div a:hover{
+    color: var(--mainColor);
+    background-color: var(--secondColr);
+    border-radius: 20px 0px;
+}
+@media screen and (max-width:1046px) {
+    .services-parent .services div{
+        width: 45%;
+    }
+}
+@media screen and (max-width:991px) {
+    .services-parent .services{
+        justify-content: center;
+    }
+    .services-parent .services div{
+        width: 80%;
+    }
+}
+@media screen and (max-width:594px) {
+    .services-parent .services{
+        justify-content: center;
+    }
+    .services-parent .services div{
+        width: 90%;
+    }
+    .services-parent h1{
+    font-size: 30px;
+}
+.services-parent .services div i{
+    font-size: 40px;
+}
+}
+/* projects */
+.projects-parent{
+    margin: 10% 0;
+}
+.projects-parent h1{
+    text-align: center;
+    color: var(--mainColor);
+    font-size: 60px;
+}
+.projects-parent h1 span{
+    color: var(--secondColr);
+}
+.projects-parent .projects{
+    width: 100%;
+}
+.projects-parent .projects .project{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+.projects-parent .projects .project .img{
+    width: 40%;
+    background-color: var(--mainColor);
+    padding: 30px;
+    text-align: center;
+    border-radius: 0 20px;
+    transition: all 1s;
+
+}
+.projects-parent .projects .project .img:hover{
+    border-radius: 20px 0px;
+}
+.projects-parent .projects .project .img img{
+    width: 80%;
+    border-radius: 0 20px;
+    transition: all 1s;
+}
+.projects-parent .projects .project .img img:hover{
+    border-radius: 20px 0px;
+    scale: 1.1;
+}
+.projects-parent .projects .project .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projects-parent .projects .project .text h2{
+    color: var(--mainColor);
+    font-size: 40px;
+}
+.projects-parent .projects .project .text p{
+    color: var(--secondColr);
+    margin-bottom: 30px;
+}
+.projects-parent .projects .project .text a{
+    text-decoration: none;
+    color: var(--bgColor);
+    background-color: var(--mainColor);
+    border-radius: 0 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: all 1s;
+}
+.projects-parent .projects .project .text a:hover{
+    background-color: var(--secondColr);
+    color: var(--mainColor);
+    border-radius: 20px 0;
+}
+.repo-link{
+    margin-left: 20px;
+}
+@media screen and (max-width:991px) {
+    .projects-parent .projects .project{
+        justify-content: center;
+    }
+    .projects-parent .projects .project .img{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+    .projects-parent .projects .project .text{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+}
+@media screen and (max-width:549px){
+    .projects-parent h1{
+        font-size: 40px;
+    }
+    .projects-parent .projects .project .text h2{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:400px){
+    .projects-parent h1{
+        font-size: 30px;
+    }
+    .projects-parent .projects .project .text h2{
+        font-size: 20px;
+    }
+    .projects-parent .projects .project .text {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .projects-parent .projects .project .text div{
+        display: flex;
+        flex-direction: column;
+    }
+    .projects-parent .projects .project .text .repo-link{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+}
+/* footer */
+.footer{
+    border-top: 4px var(--mainColor) solid;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .info h3{
+    color: var(--mainColor);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.footer .info p{
+    color: var(--secondColr);
+}
+.footer .info p i{
+    color: var(--mainColor);
+    font-size: 20px;
+}
+.footer .social a i{
+    font-size: 50px;
+    color: var(--mainColor);
+    margin-bottom: 20px;
+    transition: all 1s;
+}
+.footer .social a i:hover{
+    color: var(--secondColr);
+    scale: 1.1;
+}
+.footer .social p{
+    color: rgb(133, 131, 130);
+}
+@media screen and (max-width:991px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
